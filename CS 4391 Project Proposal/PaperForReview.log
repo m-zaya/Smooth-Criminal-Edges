@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  17 OCT 2023 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  17 OCT 2023 10:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -318,7 +318,8 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box54
-) (./PaperForReview.aux)
+)
+No file PaperForReview.aux.
 \openout1 = `PaperForReview.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -342,7 +343,7 @@ LaTeX Font Info:    ... okay on input line 45.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
- ABD: EveryShipout initializing macros (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+ABD: EveryShipout initializing macros (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -398,7 +399,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 45.
 LaTeX Info: Redefining \pageref on input line 45.
 LaTeX Info: Redefining \nameref on input line 45.
- (./PaperForReview.out) (./PaperForReview.out)
 \@outlinefile=\write3
 \openout3 = `PaperForReview.out'.
 
@@ -424,22 +424,22 @@ Package rerunfilecheck Warning: File `PaperForReview.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `PaperForReview.out':
-(rerunfilecheck)             Before: 9CAC27B30EB82A8B92AA4346344A76A5;422
+(rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  9E1349DFFA8C62E45C1783F5AEA5575E;528.
  ) 
 Here is how much of TeX's memory you used:
- 13588 strings out of 478268
- 228858 string characters out of 5846347
+ 13577 strings out of 478268
+ 228698 string characters out of 5846347
  536235 words of memory out of 5000000
- 31624 multiletter control sequences out of 15000+600000
+ 31619 multiletter control sequences out of 15000+600000
  486987 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,9n,91p,384b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on PaperForReview.pdf (1 page, 44088 bytes).
+Output written on PaperForReview.pdf (1 page, 43825 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
