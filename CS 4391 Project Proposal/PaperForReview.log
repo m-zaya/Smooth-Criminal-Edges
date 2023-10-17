@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  16 OCT 2023 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  17 OCT 2023 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,86 +402,44 @@ LaTeX Info: Redefining \nameref on input line 45.
 \@outlinefile=\write3
 \openout3 = `PaperForReview.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 66.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 68.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-
-LaTeX Warning: Citation `Authors14' on page 2 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Authors14b' on page 2 undefined on input line 189.
-
-[2]
-
-LaTeX Warning: Citation `Alpher02' on page 3 undefined on input line 258.
-
-
-LaTeX Warning: Citation `Alpher03' on page 3 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Alpher04' on page 3 undefined on input line 259.
-
-
-LaTeX Warning: Citation `Alpher03' on page 3 undefined on input line 261.
-
-
-LaTeX Warning: Citation `Alpher03' on page 3 undefined on input line 261.
-
-[3]
-
-LaTeX Warning: Citation `Authors14' on page 4 undefined on input line 390.
-
-
-LaTeX Warning: Citation `Alpher02' on page 4 undefined on input line 392.
-
-
-LaTeX Warning: Citation `Alpher03' on page 4 undefined on input line 392.
-
-
-LaTeX Warning: Citation `Alpher05' on page 4 undefined on input line 392.
-
-
-LaTeX Warning: Citation `Authors14b' on page 4 undefined on input line 392.
-
-
-LaTeX Warning: Citation `Authors14' on page 4 undefined on input line 392.
-
-[4]
-No file PaperForReview.bbl.
-[5
 
 ] (./PaperForReview.aux)
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `PaperForReview.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `PaperForReview.out' has not changed.
-(rerunfilecheck)             Checksum: CB3690DC7D6E1DD83B2B28787A950EA9;2553.
+Package rerunfilecheck Info: Checksums for `PaperForReview.out':
+(rerunfilecheck)             Before: 9CAC27B30EB82A8B92AA4346344A76A5;422
+(rerunfilecheck)             After:  9E1349DFFA8C62E45C1783F5AEA5575E;528.
  ) 
 Here is how much of TeX's memory you used:
- 13710 strings out of 478268
- 230533 string characters out of 5846347
- 547235 words of memory out of 5000000
- 31705 multiletter control sequences out of 15000+600000
- 500568 words of font info for 100 fonts, out of 8000000 for 9000
+ 13588 strings out of 478268
+ 228858 string characters out of 5846347
+ 536235 words of memory out of 5000000
+ 31624 multiletter control sequences out of 15000+600000
+ 486987 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,9n,91p,503b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on PaperForReview.pdf (5 pages, 158144 bytes).
+ 87i,9n,91p,384b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on PaperForReview.pdf (1 page, 44088 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
