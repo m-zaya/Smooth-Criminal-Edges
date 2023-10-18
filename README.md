@@ -1,4 +1,3 @@
 # Smooth-Criminal-Edges
 
-(in progress)
-Proposal path: out/PaperForReview.pdf
+(Completed?) [Project Proposal](https://github.com/m-zaya/Smooth-Criminal-Edges/blob/main/out/PaperForReview.pdf) [File path: out/PaperForReview.pdf]
