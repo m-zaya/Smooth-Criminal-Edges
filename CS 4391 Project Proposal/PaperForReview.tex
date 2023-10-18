@@ -4,6 +4,7 @@
 
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
+
 %%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
 % \usepackage[review]{cvpr}      % To produce the REVIEW version
 %\usepackage{cvpr}              % To produce the CAMERA-READY version
@@ -25,7 +26,8 @@
 % ReviewTempalte.aux before re-running LaTeX.
 % (Or just hit 'q' on the first LaTeX run, let it finish, and you
 %  should be clear).
-\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+\usepackage[breaklinks,colorlinks]{hyperref}
 
 
 % Support for easy cross-referencing
@@ -45,26 +47,26 @@
 \begin{document}
 
 %%%%%%%%% TITLE - PLEASE UPDATE
-\title{\LaTeX\ Author Guidelines for \confName~Proceedings}
+    \title{SCE: Developing a New Edge-preserving Image Smoothing Algorithm for Impulse Noise}
 
-\author{Sherry Cherniavsky\\
-University of Texas at Dallas\\
-800 W. Campbell Road\\
-Richardson, Texas 75080-3021\\
-{\tt\small Sherry.Cherniavsky@UTDallas.edu}
+    \author{Sherry Cherniavsky\\
+    University of Texas at Dallas\\
+    800 W. Campbell Road\\
+    Richardson, Texas 75080-3021\\
+    {\tt\small Sherry.Cherniavsky@UTDallas.edu}
 % For a paper whose authors are all at the same institution,
 % omit the following lines up until the closing ``}''.
 % Additional authors and addresses can be added with ``\and'',
 % just like the second author.
 % To save space, use either the email address or home page, not both
-\and
-Pax Gole\\
-{\tt\small Pax.Gole@UTDallas.edu}
-\and
-Jonah Markham\\
-{\tt\small Jonah.Markham@UTDallas.edu}
-}
-\maketitle
+    \and
+    Pax Gole\\
+    {\tt\small Pax.Gole@UTDallas.edu}
+    \and
+    Jonah Markham\\
+    {\tt\small Jonah.Markham@UTDallas.edu}
+    }
+    \maketitle
 
 %%%%%%%%% ABSTRACT
 % \begin{abstract}
@@ -76,37 +78,36 @@ Jonah Markham\\
 % \end{abstract}
 
 %%%%%%%%% BODY TEXT
-\section{Problem Statement}
-This research investigates techniques to enhance edge-preserving image
-denoising algorithms, in order to better restore images that have been
-corrupted with impulse noise, while maintaining sharp edges and fine details.
+    \section{Problem Statement}
+    This research investigates techniques to enhance edge-preserving image
+    denoising algorithms, in order to better restore images that have been
+    corrupted with impulse noise, while maintaining sharp edges and fine details \cite{chan2005, huang2021, chan2005-2, zhang2015}.
 
 %------------------------------------------------------------------------
-\section{Approach}
-The approach leverages the characteristics of impulse noise to enhance
-edge-preserving smoothing techniques. Noisy pixels will be detected then
-replaced using surrounding pixels, rather than indiscriminately filtering
-all pixels. This should better preserve edges compared to basic techniques
-like bilateral filtering.
+    \section{Approach}
+    The approach leverages the characteristics of impulse noise to enhance
+    edge-preserving smoothing techniques \cite{nikolova2004, abreu1996}. Noisy pixels will be detected then
+    replaced using surrounding pixels, rather than indiscriminately filtering
+    all pixels. This should better preserve edges compared to basic techniques
+    like bilateral filtering.
 
 %-------------------------------------------------------------------------
-\section{Data}
-The image dataset will consist of photographs from the USC-SIPI image
-database corrupted with varying levels of salt and pepper noise.
-This will allow testing under different noise conditions.
+    \section{Data}
+    The image dataset will consist of photographs from the USC-SIPI image
+    database corrupted with varying levels of salt and pepper noise.
+    This will allow testing under different noise conditions \cite{sipi_misc}.
 
 %-------------------------------------------------------------------------
-\section{Evaluation}
-The final results will be evaluated by benchmarking against common
-filtering techniques, including staple methods such as applying Gaussian,
-Bilateral, and Non-Local Means filters uniformly across all pixels.
-Quantitative metrics and visual inspection will compare output images to
-the originals, judging the performance of our proposed technique against
-these conventional benchmarks. This comparative analysis will reveal how
-well our approach preserves edges and details relative to establish filters
-applied indiscriminately without excluding noisy pixels.
-
-
+    \section{Evaluation}
+    The final results will be evaluated by benchmarking against common
+    filtering techniques, including staple methods such as applying Gaussian,
+    Bilateral, and Non-Local Means filters uniformly across all pixels.
+    Quantitative metrics and visual inspection will compare output images to
+    the originals, judging the performance of our proposed technique against
+    these conventional benchmarks. This comparative analysis will reveal how
+    well our approach preserves edges and details relative to establish filters
+    applied indiscriminately without excluding noisy pixels.
+    \newpage
 % Update the cvpr.cls to do the following automatically.
 % For this citation style, keep multiple citations in numerical (not
 % chronological) order, so prefer \cite{Alpher03,Alpher02,Authors14} to
@@ -114,8 +115,10 @@ applied indiscriminately without excluding noisy pixels.
 
 
 %-------------------------------------------------------------------------
-\section{References}
-Will figure this out tmrw
 
+    {\small
+    \bibliographystyle{ieee_fullname}
+    \bibliography{egbib}
+    }
 
 \end{document}
