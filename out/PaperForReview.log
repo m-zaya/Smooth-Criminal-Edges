@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  18 OCT 2023 01:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.15)  18 OCT 2023 10:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -499,7 +499,7 @@ Package rerunfilecheck Info: File `PaperForReview.out' has not changed.
 Here is how much of TeX's memory you used:
  13441 strings out of 478268
  226304 string characters out of 5846347
- 539826 words of memory out of 5000000
+ 540826 words of memory out of 5000000
  31462 multiletter control sequences out of 15000+600000
  488221 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -510,7 +510,7 @@ exlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
 Output written on /Users/zaya/IdeaProjects/Smooth-Criminal-Edges/out/PaperForRe
-view.pdf (1 page, 60107 bytes).
+view.pdf (1 page, 60125 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream
