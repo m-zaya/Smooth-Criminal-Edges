@@ -15,11 +15,11 @@ def sce_filtering(
     # intensity_variance: float,
     # kernel_size: int,
 ) -> np.uint8:
-	"""
-	function docstring goes here
-	"""
+    """
+    function docstring goes here
+    """
 
-	img = img / 255
+    img = img / 255
     img = img.astype("float32")
     img_filtered = np.zeros(img.shape) # Placeholder of the filtered image
 
@@ -31,7 +31,7 @@ def sce_filtering(
 
 
 if __name__ == "__main__":
-	img = cv2.imread("data/boat.png", 0) # read gray image
+    img = cv2.imread("data/boat.png", 0) # read gray image
 
     # Generate Gaussian noise
     noise = np.random.normal(0,0.6,img.size)
