@@ -33,7 +33,7 @@ def sce_filtering(
 if __name__ == "__main__":
 	img = cv2.imread("data/boat.png", 0) # read gray image
 
-	# Generate Gaussian noise
+    # Generate Gaussian noise
     noise = np.random.normal(0,0.6,img.size)
     noise = noise.reshape(img.shape[0],img.shape[1]).astype('uint8')
 
