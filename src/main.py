@@ -47,8 +47,8 @@ def sp_noise(image, prob=0.01):
 
 
 if __name__ == "__main__":
-    directory = "data/data/"
-    datafile = open("results/ata.csv", "w")
+    directory = "data/"
+    datafile = open("results/data.csv", "w")
     datafile.write("filename, photo_h, photo_w, white_noise_count, black_noise_count, total_noise_count, norm_count, total_count, sharped_not_noise_count, sharped_noise_count,sharped_tn, sharped_tp, sharped_fn, sharped_fp,amfd_not_noise_count, amfd_noise_count, amfd_tn, amfd_tp, amfd_fn, amfd_fp,namfd_not_noise_count, namfd_noise_count, namfd_tn,namfd_tp, namfd_fn, namfd_fp\n") # add percentages
     datafile.close()
     for filename in os.listdir(directory):
