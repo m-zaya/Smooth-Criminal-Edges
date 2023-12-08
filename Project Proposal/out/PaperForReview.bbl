@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{abreu1996}
+E. Abreu, M. Lightstone, S.~K. Mitra, and K. Arakawa.
+\newblock A new efficient approach for the removal of impulse noise from highly
+  corrupted images.
+\newblock {\em IEEE Transactions on Image Processing}, 5(6):1012--1025, June
+  1996.
+
+\bibitem{chan2005}
+Raymond Chan, Chung-Wa Ho, and Mila Nikolova.
+\newblock Salt-and-pepper noise removal by median-type noise detectors and
+  detail-preserving regularization.
+\newblock {\em IEEE Transactions on Image Processing}, 14(10):1479--1485, 2005.
+
+\bibitem{chan2005-2}
+R.~H. Chan, C.-W. Ho, and M. Nikolova.
+\newblock Salt-and-pepper noise removal by median-type noise detectors and
+  detail-preserving regularization.
+\newblock {\em IEEE Transactions on Image Processing}, 14(10):1479--1485, 2005.
+
+\bibitem{huang2021}
+Keya Huang and Hairong Zhu.
+\newblock Image noise removal method based on improved nonlocal mean algorithm.
+\newblock {\em Complexity}, 2021:Article ID 5578788, 10 pages, 2021.
+
+\bibitem{nikolova2004}
+M. Nikolova.
+\newblock A variational approach to remove outliers and impulse noise.
+\newblock {\em Journal of Mathematical Imaging and Vision}, 20:99--120, 2004.
+
+\bibitem{sipi_misc}
+USC Signal and Image~Processing Institute.
+\newblock {SIPI Image Database}.
+\newblock \url{https://sipi.usc.edu/database/database.php?volume=misc}, 2023.
+\newblock [Online; accessed 18-October-2023].
+
+\bibitem{zhang2015}
+Zhifei Zhang.
+\newblock Image noise detection, measurement, and removal techniques.
+\newblock {\em
+  \url{https://zzutk.github.io/docs/reports/2015.07%20-%20Image%20Noise%20Detection,%20Measurement,%20and%20Removal%20Techniques.pdf}},
+  2015.
+
+\end{thebibliography}
