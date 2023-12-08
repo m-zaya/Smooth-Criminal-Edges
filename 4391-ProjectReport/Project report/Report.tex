@@ -1,0 +1,137 @@
+% CVPR 2022 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+% \usepackage[review]{cvpr}      % To produce the REVIEW version
+%\usepackage{cvpr}              % To produce the CAMERA-READY version
+\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, e.g. with the
+% file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete
+% ReviewTempalte.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you
+%  should be clear).
+
+\usepackage[breaklinks,colorlinks]{hyperref}
+
+
+% Support for easy cross-referencing
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\Crefname{table}{Table}{Tables}
+\crefname{table}{Tab.}{Tabs.}
+
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\cvprPaperID{*****} % *** Enter the CVPR Paper ID here
+\def\confName{CVPR}
+\def\confYear{2022}
+
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+    \title{Smooth Criminal Edges: Developing a New Edge-preserving Image Smoothing Algorithm for Impulse Noise}
+
+    \author{Sherry Cherniavsky\\
+    University of Texas at Dallas\\
+    800 W. Campbell Road\\
+    Richardson, Texas 75080-3021\\
+    {\tt\small Sherry.Cherniavsky@UTDallas.edu}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+    \and
+    Pax Gole\\
+    {\tt\small Pax.Gole@UTDallas.edu}
+    \and
+    Jonah Markham\\
+    {\tt\small Jonah.Markham@UTDallas.edu}
+    }
+    \maketitle
+
+%%%%%%%%% ABSTRACT
+ \begin{abstract}
+    Abstract stuff
+ \end{abstract}
+
+%%%%%%%%% BODY TEXT
+    \section{Introduction}
+    Intro instructions: Describe the motivation of the project, i.e., why do you want to work on
+    this problem. Then describe an overview of the framework/method/system.
+
+%------------------------------------------------------------------------
+    \section{Related Work}
+    Related Work instructions: Discuss the related work of your project.
+
+%-------------------------------------------------------------------------
+    \section{Method}
+    Method instructions: Describe your solution for the project. For example, describe each component of
+    the framework in details. Try to use figures to illustrate the method instead of only using
+    text. ”A picture is worth a thousand words”.
+
+%-------------------------------------------------------------------------
+    \section{Experiments}
+    Experiments instructions: In this section, you can first describe the datasets and evaluation metrics.
+    Then describe what experiments you have done for the project by adding experimental results
+    to the report. You can use figures and plots to show these results.
+
+    \section{Conclusion}
+    Conclusion instructions: Describe the take-home messages of the project and conclude the report.
+
+    \newpage
+% Update the cvpr.cls to do the following automatically.
+% For this citation style, keep multiple citations in numerical (not
+% chronological) order, so prefer \cite{Alpher03,Alpher02,Authors14} to
+% \cite{Alpher02,Alpher03,Authors14}.
+
+
+%-------------------------------------------------------------------------
+
+    {\small
+    \bibliographystyle{ieee_fullname}
+    \bibliography{egbib}
+    }
+    Note:\\
+    \tab References will show up once we cite thru-out the doc.
+    \newpage
+    Submission note: \\
+    \tab Please submit the following items to eLearning. \\
+    \tab You can zip all the files. \\
+    \tab\tab • (Required) Final report in pdf format \\
+    \tab\tab • (Required) Source code of your project \\
+
+    Instructions: (for easier reference)\\
+    \newline
+    Evaluation criteria:
+    The grading will be based on the overall quality of the report
+    in terms of writing, content and clarity. Failure can provide
+    valuable insights. Make sure to discuss and analyze your results
+    in detail, even if they are not in line with your initial expectations.\\
+
+    Minimum page requirement: 5 pages.
+    The report should be at least 5 pages with the CVPR format
+    (excluding references, i.e., without references, the content
+    should be at least 5 pages). You can go beyond 5 pages, but
+    make sure it does not surpass 6 pages in length. (excluding references).
+
+\end{document}
