@@ -19,10 +19,11 @@ def get_sharpened_map(image):
     result = cv2.filter2D(image, -1, kernel)
     _, binary_matrix = cv2.threshold(result, 128, 255, cv2.THRESH_BINARY)
     result = (binary_matrix > 0).astype(int)
-    # setting all 2s to 1s gives great fn and high fp, setting them to 0s gives around the same fp and fn, a decently acceptable amount
-    result[result == -1] = 0
 
     return result
+
+def threshold_detection(image, low=0, high=255):
+    return ~((image <= low) | (image >= high))
 
 def adaptive_median_filter_detection(image, wmax):
     height, width = image.shape
