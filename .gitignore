@@ -1,3 +1,6 @@
 .DS_Store
 .idea/
 *extra_data/
+holding/
+checklist.txt
+src/mine.py

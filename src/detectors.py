@@ -8,29 +8,19 @@ def get_noise_map_basic(image, window_size):
         for j in range(image.shape[1] - window_size + 1):
             window = image[i:i+window_size, j:j+window_size]
             std_dev = np.std(window)
-            result[i+1, j+1] = std_dev
+            result[i, j] = std_dev
 
-    return result
+    return 1-result
 
 def get_sharpened_map(image):
-    kernel30 = np.array([[-1, -1, -1],
-                        [-1, 30, -1],
+    kernel = np.array([[-1, -1, -1],
+                        [-1, 100, -1],
                         [-1, -1, -1]])
-    kernel3 = np.array(  [[-1, -1, -1],
-                        [-1, 3, -1],
-                        [-1, -1, -1]])
-    img30 = cv2.filter2D(image, -1, kernel30)
-    _, binary_matrix = cv2.threshold(img30, 128, 255, cv2.THRESH_BINARY)
-    img30 = (binary_matrix > 0).astype(int)
-    img3 = cv2.filter2D(image, -1, kernel3)
-    _, binary_matrix = cv2.threshold(img3, 128, 255, cv2.THRESH_BINARY)
-    img3 = (binary_matrix > 0).astype(int)
-    result = (img30+img3)
-    result[result == 2] = 0
+    result = cv2.filter2D(image, -1, kernel)
+    _, binary_matrix = cv2.threshold(result, 128, 255, cv2.THRESH_BINARY)
+    result = (binary_matrix > 0).astype(int)
     # setting all 2s to 1s gives great fn and high fp, setting them to 0s gives around the same fp and fn, a decently acceptable amount
-    print("my sharp")
-    print("Number of 1s (not detected noise) in matrix: ", np.count_nonzero(result == 1))
-    print("Number of 0s (detected noise) in matrix: ", np.count_nonzero(result == 0))
+    result[result == -1] = 0
 
     return result
 
@@ -55,9 +45,6 @@ def adaptive_median_filter_detection(image, wmax):
                 result[i, j] = 1
             else:
                 result[i, j] = 0
-    print("Adaptive")
-    print("Number of 1s (not detected noise) in matrix: ", np.count_nonzero(result == 1))
-    print("Number of 0s (detected noise) in matrix: ", np.count_nonzero(result == 0))
 
     return result
 
@@ -68,8 +55,5 @@ def nonadaptive_median_filter_detection(image, w):
     min_values = np.min(window_view, axis=(2, 3))
     max_values = np.max(window_view, axis=(2, 3))
     result = np.where((min_values < image) & (image < max_values), 1, 0)
-    print("Non Adaptive")
-    print("Number of 1s (not detected noise) in matrix: ", np.count_nonzero(result == 1))
-    print("Number of 0s (detected noise) in matrix: ", np.count_nonzero(result == 0))
 
     return result
