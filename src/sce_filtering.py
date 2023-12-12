@@ -119,11 +119,11 @@ def sce_filtering(
     img_filtered = np.uint8(img_filtered)
     return img_filtered
 
-def maskgen(img):
-    return (img == 0) | (img == 255)
+def threshold_noise_detection(img, low=0, high=255):
+    return (img <= low) | (img >= high)
 
 if __name__ == "__main__":
-    img = cv2.imread("data/bridge.png", 0) # read gray image
+    img = cv2.imread("data/ruler.png", 0) # read gray image
 
     # # Generate Gaussian noise
     # noise = np.random.normal(0,0.5,img.size)
@@ -135,17 +135,21 @@ if __name__ == "__main__":
 
     # add noise to the image, and get the ground truth mask for where the noise is
     img_noisy, mask_gt = sp_noise(img, 0.2)
-    mask = nonadaptive_median_filter_detection(img_noisy, 11)
+    # mask = nonadaptive_median_filter_detection(img_noisy, 3)
 
     # SCE filtering
-    img_sce = sce_filtering(img_noisy, 1-mask)
+    # img_sce = sce_filtering(img_noisy, 1-mask)
     cv2.imwrite('results/im_noisy.png', img_noisy)
-    cv2.imwrite('results/im_sce.png', img_sce)
+    # cv2.imwrite('results/im_sce.png', img_sce)
 
-    mask2 = maskgen(img_noisy)
+    mask2 = threshold_noise_detection(img_noisy)
 
     img_sce2 = sce_filtering(img_noisy, mask2)
     cv2.imwrite('results/im_sce2.png', img_sce2)
 
-    print(np.all(img_sce == img_sce2))
+    img_sce_mask_gt = sce_filtering(img_noisy, mask_gt)
+    cv2.imwrite('results/im_sce_mask_gt.png', img_sce_mask_gt)
+
+
+    # print(np.all(img_sce == img_sce2))
 
