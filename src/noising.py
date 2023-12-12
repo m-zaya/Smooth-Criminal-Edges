@@ -42,7 +42,7 @@ def uniform_noise(image, prob=0.05):
     output = cv2.add(image,noise_map)
     return output, noise_map
 
-def sce_restoration(img: np.uint8, mask: np.bool_) -> np.uint8:
+def sce_restoration(img: np.uint8, mask: np.bool_, implement_allnoise_fix: bool = True) -> np.uint8:
 
     img = np.pad(img, 2, constant_values = 0)
     mask = np.pad(mask, 2, constant_values = True)
@@ -66,7 +66,8 @@ def sce_restoration(img: np.uint8, mask: np.bool_) -> np.uint8:
                 if len(samples) >= 1:
                     img_filtered[i,j] = np.median(samples)
                 else:
-                    img_filtered[i,j] = img[i,j]
+                    img_filtered[i,j] = np.median(img_slice) if implement_allnoise_fix else img[i,j]
+                
             else:
                     img_filtered[i,j] = img[i,j]
 
