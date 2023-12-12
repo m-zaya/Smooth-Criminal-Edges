@@ -57,3 +57,6 @@ def nonadaptive_median_filter_detection(image, w):
     result = np.where((min_values < image) & (image < max_values), 1, 0)
 
     return result
+
+def threshold_detection(image, low=0, high=255):
+    return ~((image <= low) | (image >= high))
